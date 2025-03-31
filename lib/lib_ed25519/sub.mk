@@ -1,0 +1,12 @@
+global-incdirs-y += .
+srcs-y += simple_sha512.c
+srcs-y += simple_ge.c
+srcs-y += simple_sc.c
+srcs-y += simple_keypair.c
+srcs-y += simple_sign.c
+srcs-y += simple_fe.c
+srcs-y += simple_verify.c
+cflags-remove-y += -Wold-style-definition
+cflags-remove-y += -Wswitch-default
+cflags-remove-y += -Wstrict-prototypes
+cflags-y += $(call cc-option,-Wno-deprecated-non-prototype)
