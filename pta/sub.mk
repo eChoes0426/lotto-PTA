@@ -22,7 +22,7 @@ subdirs-y += k3
 subdirs-y += veraison_attestation
 
 srcs-y += hello_world.c
-srcs-y += lotta_pta.c
+srcs-y += pta_vrf.c
 
 ifeq ($(CFG_REMOTEPROC_PTA),y)
 gensrcs-y += rproc_pub_key

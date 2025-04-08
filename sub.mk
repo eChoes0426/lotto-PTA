@@ -4,6 +4,7 @@ subdirs-y += kernel
 subdirs-y += mm
 subdirs-y += pta
 subdirs-y += lib/lib_ed25519
+subdirs-y += lib/lib_vrf
 subdirs-y += tee
 subdirs-$(CFG_TEE_CORE_EMBED_INTERNAL_TESTS) += tests
 
